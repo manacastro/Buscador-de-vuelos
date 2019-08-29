@@ -1,0 +1,24 @@
+.ContentLenguages{
+    background-color: whitesmoke;
+    width: 850px;
+    display: flex;
+    position: absolute;
+    height: 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 25px;
+    visibility: hidden;
+    .ContentCountries{
+        display: flex;
+        padding: 5px;
+        .FlagImage{
+            height: 25px;
+         }
+        .TitleLanguage{
+            font-family: helvetica, Arial, sans-serif;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+    }
+}

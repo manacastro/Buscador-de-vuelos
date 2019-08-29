@@ -1,0 +1,25 @@
+.Feature{
+    display: flex;
+    flex-direction: column; 
+    width: 250px;
+    margin-right: 5%;
+    .FeatureIcon{
+        color: white;
+        font-size: 30px;
+    }
+    .FeatureTitle{
+        color:white;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        padding-top: 10%;
+    }
+    .FeatureText{
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+        font-family: helvetica, Arial, sans-serif;
+        font-weight: unset;
+        line-height: 1.6em;
+        margin-top: 10%;
+    }
+}

@@ -1,0 +1,15 @@
+.general{
+    padding-left: 67px;
+    padding-top: 60px;
+    .FeatureSection{
+        display: flex;
+    }
+    .SectionSearchheader{
+        .TitleSearchHeader{
+            color:white;
+        }
+        .TextSearchHeader{
+            color: rgba(255, 255, 255, 0.3);
+        }
+    }
+}

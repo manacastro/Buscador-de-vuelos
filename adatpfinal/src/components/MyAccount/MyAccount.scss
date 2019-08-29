@@ -1,0 +1,17 @@
+.SectionAccount {
+    display: flex;
+    justify-content: flex-end;
+    width: 110px;
+    .UserIcon {
+        color: rgba(255, 255, 255, 0.3);
+        width: 16%;
+        font-size: 19px;
+        margin-right: 8%;
+    }
+
+    .TitleDropDown {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+        font-family: helvetica, Arial, sans-serif;
+    }
+}

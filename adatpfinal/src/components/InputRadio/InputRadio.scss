@@ -1,0 +1,21 @@
+.SectionRadio{
+    display: flex;
+    margin-top: -3%;
+    .BlockRadio{
+        display: flex;
+        padding: 10px;
+        .RadioInput{
+            color: white;
+            margin-top: 7%;
+        }
+        .textRadio{
+            color: #fff;
+            opacity: 0.85;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            padding: 4px;
+        }
+    }
+}
+
+

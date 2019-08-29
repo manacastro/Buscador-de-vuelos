@@ -1,0 +1,31 @@
+.navContainer {
+    height: 50px;
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 1200px;
+    margin-left: 5%;
+
+    .containerIso {
+        height: 30px;
+        width: 90px;
+        margin-top: 2%;
+        position: absolute;
+
+        .isoAdantrip {
+            width: 80px;
+        }
+    }
+
+    .flag2 {
+        width: 4%;
+        margin-right: 3%;
+    }
+
+    .NavRight {
+        display: flex;
+        justify-content: flex-end;
+        width: 530px;
+        padding-left: 55%;
+        padding-top: 2%;
+    }
+}
