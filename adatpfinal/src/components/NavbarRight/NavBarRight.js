@@ -1,14 +1,17 @@
 import React from 'react';
 import Languages from 'components/Languages/Languages';
-import Exchange from 'components/Exchange/Exchange';
+import Exchanges from 'components/Exchanges/Exchanges';
 import MyAccount from 'components/MyAccount/MyAccount';
-
+import flag from 'assets/images/flag2.png';
+import './NavBarRight.scss';
 
 const NavBarRight = () => (
     <section className='NavRight'>
-        <Exchange />
-        <Languages />
+        <h1 className='exchange'>USD</h1>
+        <img src={flag} alt=''className='flag'/>
         <MyAccount/>
+        <Exchanges />        
+        <Languages />
     </section>
 )
 

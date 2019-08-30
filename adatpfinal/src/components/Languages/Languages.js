@@ -13,10 +13,14 @@ class Languages extends React.Component {
   }
   render() {
     return (
-      <div className='ContentLenguages'>
-        {
-        this.state.languages.map(language =><Countries language={language} />)
-        }
+      <div className='ContentLanguages'>
+        <p className='TitleContentLanguages'>Languages</p>
+        <div className='GeneralLenguages'>
+          {
+            this.state.languages.map(language => <Countries language={language} />)
+          }
+        </div>
+
       </div>
     )
   }

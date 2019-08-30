@@ -1,8 +1,8 @@
-.ContentLanguages {
+.ContentExchange {
     position: absolute;
     margin-top: 25px;
     visibility: hidden;
-    .TitleContentLanguages {
+    .TitleContentCurrencies{
         font-family: 'Roboto', helvetica, Arial, sans-serif;
         letter-spacing: 0.33px;
         font-weight: bold;
@@ -15,29 +15,30 @@
         padding-top: 15px;
         padding-left: 45px;
     }
-
-    .GeneralLenguages {
+    .GeneralCurrencies {
         background-color: whitesmoke;
         width: 750px;
         display: flex;
         position: relative;
-        height: 395px;
+        height: 460px;
         flex-wrap: wrap;
-        flex-direction: column;
-        // padding: 25px;
+        flex-direction: column;        
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 40px;
-
-        .ContentCountries {
+        .ContentCurrencies {
             display: flex;
             padding: 5px;
-
-            .FlagImage {
-                height: 23px;
+            .codeCurrencies {
+                height: 25px;
+                font-family: helvetica, Arial, sans-serif;
+                color: #0093d2;
+                width: 45px;
+                font-size: 13px;
+                font-weight: bold;
             }
 
-            .TitleLanguage {
+            .TitleCurrencies {
                 font-family: helvetica, Arial, sans-serif;
                 font-size: 12px;
                 margin-top: 5px;
