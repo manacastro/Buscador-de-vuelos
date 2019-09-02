@@ -13,13 +13,13 @@ class Exchanges extends React.Component {
   }
   render() {
     return (
-
       <div className='ContentExchange'>
+        
         <h1 className='TitleContentCurrencies'>All Currencies</h1>
         <div className='GeneralCurrencies'>
-        {
-          this.state.exchanges.map(exchange => <Currencies exchange={exchange} />)
-        }
+          {
+            this.state.exchanges.map(exchange => <Currencies exchange={exchange} />)
+          }
         </div>
       </div>
 

@@ -1,8 +1,8 @@
-.ContentExchange {
+.ContentPopularExchange {
     position: absolute;
-    margin-top: 140px;
+    margin-top: 20px;
     //visibility: hidden;
-    .TitleContentCurrencies{
+    .TitleContentPopularCurrencies{
         font-family: 'Roboto', helvetica, Arial, sans-serif;
         letter-spacing: 0.33px;
         font-weight: bold;
@@ -10,27 +10,26 @@
         font-size: 14px;
         line-height: 1.1;
         color: inherit;
-        color: rgb(68, 67, 67);
-        padding-bottom: 2px;
-        padding-top: 10px;
+        color: rgb(68, 67, 67);       
+        padding-top: 15px;
         padding-left: 45px;
     }
-    .GeneralCurrencies {
+    .GeneralPopularCurrencies {
         background-color: whitesmoke;
         width: 750px;
         display: flex;
         position: relative;
-        height: 430px;
+        height: 105px;
         flex-wrap: wrap;
         flex-direction: column;        
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 40px;
-        .ContentCurrencies {
+        .ContentPopularCurrencies {
             display: flex;
             padding: 5px;
             height: 23px;
-            .codeCurrencies {
+            .codePopularCurrencies {
                 height: 25px;
                 font-family: helvetica, Arial, sans-serif;
                 color: #0093d2;
@@ -40,7 +39,7 @@
                 padding-top: 5px;
             }
 
-            .TitleCurrencies {
+            .TitlePopularCurrencies {
                 font-family: helvetica, Arial, sans-serif;
                 font-size: 12px;
                 margin-top: 5px;
