@@ -1,51 +1,39 @@
-.SearchBar{
-    display: flex;
-    .SectionInputSearchBar {        
-        border: 1px solid rgba(255, 255, 255, 0.3);        
-        height: 55px;
-        display: flex;
-        
-    }    
-    .InputSearchBar{
-        display: block;
-        width: 100%;
-        border: none !important;
-        outline: none !important;
-        height: 55px;
-        color:white;
-        font-size: 16px;
-        background: none;
-        padding-left: 13px;
-    }
-    .IconSearchbar{
-        color:white;
-        padding-top: 18px;
-        padding-left: 10px;
-        font-size: 20px;
-
-    }
-    .ButtonOk{
-    display: block;
-    height: 57px;
-    line-height: 57px;
-    text-align: center;
-    padding: 0;
-    width: 5%;
-    color: #fff;
-    background: #ff6c2d;
-    border: none;
-    font-weight: bold;
-    letter-spacing: 1px;
+.search {
     position: relative;
-    border-radius: 0 3px 3px 0;
-    box-shadow: 0 2px 30px rgba(255,145,98,0.65);
-    position: inherit;
+    top: 250px;
+    width: 100%;
+    
+    @media(max-width: 990px){
+        top: 60px;
     }
+    h1 {
+        color: white;
+        
+        font-size: 36px;
+        letter-spacing: 0.33px;
+        font-weight: 100;
+        margin: 0;
+    }
+    p {
+        color: white;
+       
+        font-size: 16px;
+        opacity: 0.65;
+        margin: 8px 0 0 0;
+    }
+    .searchBar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        bottom: 230px;
+        align-items: center;
+        position: absolute;
+    }
+
     .ButtonArrow{
         border: none;
         background: none;
-        color: white;
-        
+        color: white; 
 
         .ArrowIcon{
             font-size: 25px;

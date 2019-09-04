@@ -2,33 +2,24 @@ import React from 'react'
 import './SearchBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faCalendarAlt, faUserFriends, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import SearchInput, { SEARCHINPUT_RELATIONS, SEARCHINPUT_POSITIONS, SEARCHINPUT_DIMENSIONS } from 'components/SearchInput/SearchInput'
 
-const SearchBar = () => (
-    <section className='SearchBar'>
-        <div className='SectionInputSearchBar'>
-        <FontAwesomeIcon icon={faMapMarkerAlt} className='IconSearchbar'/>
-        <input className='InputSearchBar' type='text' value='Departure' />
+const SearchBar = ({ title, subtitle }) => (
+    <div className='search'>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+        <div className='searchBar'>
+            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.LEFTEXTREME} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Departure'} />
+            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Arrival'} />
+            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
+            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
+            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faUserFriends} type={'number'} placeholder={'1'} />           
+            <div className='ButtonOk'>
+                <button className='ButtonArrow'><FontAwesomeIcon icon={faChevronRight} className='ArrowIcon' /></button>
+            </div>
         </div>
-        <div className='SectionInputSearchBar'>
-        <FontAwesomeIcon icon={faMapMarkerAlt} className='IconSearchbar'/>
-        <input className='InputSearchBar' type="text" value='Arribal' />
-        </div>
-        <div className='SectionInputSearchBar'>
-        <FontAwesomeIcon icon={faCalendarAlt} className='IconSearchbar'/>
-        <input className='InputSearchBar' type="date" value='' />
-        </div>
-        <div className='SectionInputSearchBar'>
-        <FontAwesomeIcon icon={faCalendarAlt} className='IconSearchbar'/>
-        <input className='InputSearchBar' type="date" value='' />
-        </div>
-        <div className='SectionInputSearchBar'>
-        <FontAwesomeIcon icon={faUserFriends} className='IconSearchbar'/>
-        <input className='InputSearchBar' type="number"placeholder='1'/>
-        </div>
-        <div className='ButtonOk'>        
-        <button className='ButtonArrow'><FontAwesomeIcon icon={faChevronRight} className='ArrowIcon'/></button>
-        </div>
-    </section>
+
+    </div>
 )
 
 export default SearchBar

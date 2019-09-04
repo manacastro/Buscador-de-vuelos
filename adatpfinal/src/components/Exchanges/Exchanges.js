@@ -13,8 +13,7 @@ class Exchanges extends React.Component {
   }
   render() {
     return (
-      <div className='ContentExchange'>
-        
+      <div className='ContentExchange'>        
         <h1 className='TitleContentCurrencies'>All Currencies</h1>
         <div className='GeneralCurrencies'>
           {

@@ -13,7 +13,6 @@ class PopularExchanges extends React.Component {
   }
   render() {
     return (
-
       <div className='ContentPopularExchange'>
         <h1 className='TitleContentPopularCurrencies'>Popular Currencies</h1>
         <div className='GeneralPopularCurrencies'>
@@ -22,7 +21,6 @@ class PopularExchanges extends React.Component {
         }
         </div>
       </div>
-
     )
   }
 }

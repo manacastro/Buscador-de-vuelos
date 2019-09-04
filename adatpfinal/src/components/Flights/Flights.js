@@ -21,7 +21,6 @@ class Flights extends React.Component {
     state = {
         flights : []
     }
-
     //componentDidMount = () => {
      loadFlights = () => {
         fetch('https://test.api.amadeus.com/v1/security/oauth2/token', {
@@ -36,7 +35,6 @@ class Flights extends React.Component {
                 // cuando la API nos responde, podemos guardarnos ese código que vamos a utilizarlo para hacer el fetch a la API de Amadeus
                 // como este token vence cada cierto tiempo, por seguridad, siempre vamos a tener que obtener uno nuevo antes de llamar a la API
                 const accessToken = data.access_token;
-
                 // haga el pedido a la API de Amadeus para obtener unos vuelvos de ejemplo
                 fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${iataOrigin}&destinationLocationCode=${iataDest}&departureDate=${fromDate}&returnDate=${toData}&adults=${adults}&max=5`, {
                     // el header es para enviarle ese token a la API
@@ -73,7 +71,6 @@ class Flights extends React.Component {
             </>)
     }
 }
-
 // const getImages = carrier => {
 //     fetch(`https://content.airhex.com/content/logos/airlines_${carrierCode}_200_200_s.png`)
 //         .then(response => response.json())
@@ -85,5 +82,4 @@ class Flights extends React.Component {
 //         .then(response => response.json())
 //         .then(res => console.log(res.state))
 // }
-
 export default Flights;
