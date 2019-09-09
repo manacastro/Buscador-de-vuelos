@@ -1,23 +1,45 @@
 import React from 'react'
 import './SearchBar.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faCalendarAlt, faUserFriends, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faCalendarAlt, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import SearchInput, { SEARCHINPUT_RELATIONS, SEARCHINPUT_POSITIONS, SEARCHINPUT_DIMENSIONS } from 'components/SearchInput/SearchInput'
+import Button from 'components/Button/Button';
+import { SearchContextConsumer } from 'components/Contexts/SearchContext';
+import { ResultsContextConsumer } from 'components/Contexts/ResultsContext';
+
 
 const SearchBar = ({ title, subtitle }) => (
     <div className='search'>
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        <div className='searchBar'>
-            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.LEFTEXTREME} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Departure'} />
-            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Arrival'} />
-            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
-            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
-            <SearchInput relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faUserFriends} type={'number'} placeholder={'1'} />           
-            <div className='ButtonOk'>
-                <button className='ButtonArrow'><FontAwesomeIcon icon={faChevronRight} className='ArrowIcon' /></button>
-            </div>
-        </div>
+        <SearchContextConsumer>
+            {
+           
+                ({iataOrigin,
+                    modifyInfoiataOrigin,
+                    iataDest,
+                    modifyInfoIataDest,
+                    fromDate,
+                    modifyInfoFromDate,
+                    toData,
+                    modifyInfoToData,
+                    adults,
+                    modifyAdults}) => (
+                    <div className='searchBar'>
+                    <SearchInput value={iataOrigin} onChange={ modifyInfoiataOrigin} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.LEFTEXTREME} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Departure'} />
+                    <SearchInput value={iataDest} onChange={ modifyInfoIataDest}relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Arrival'} />
+                    <SearchInput value={fromDate} onChange={ modifyInfoFromDate}relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
+                    <SearchInput value={toData} onChange={ modifyInfoToData}relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
+                    <SearchInput value={adults} onChange={ modifyAdults}relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faUserFriends} type={'number'} placeholder={'1'} />
+                    <ResultsContextConsumer>{
+                        ({loadFlights}) => (
+                            <Button onClick={()=>loadFlights(iataOrigin, iataDest, fromDate, toData, adults)}/>
+                        )
+                    }
+                    </ResultsContextConsumer>
+                </div>
+                )
+            }
+        </SearchContextConsumer>
 
     </div>
 )

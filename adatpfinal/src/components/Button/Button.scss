@@ -1,0 +1,16 @@
+// // BOTONES POR TIPO (con ícono / con texto)
+.button {
+   margin: 5px 0;
+   background-color: orange;
+   cursor: pointer;
+   box-shadow: 0 0 1em orange;
+   border-radius: 0 3px 3px 0;
+   color: white;
+   font-weight: bold;
+   line-height: 57px;
+   text-align: center;
+   width: 65px;
+   path {
+       transform: scale(1.2);
+   }
+}

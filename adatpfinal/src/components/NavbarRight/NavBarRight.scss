@@ -7,10 +7,10 @@
         visibility: visible;
         cursor: pointer;
     }
-}    
-.exchange:hover~ .ContentPopularExchange {
-    visibility: visible;
-    cursor: pointer;
+    &:hover~ .ContentPopularExchange {
+        visibility: visible;
+        cursor: pointer;
+    }   
 }
 
 .ContentFlag {
@@ -29,3 +29,4 @@
         cursor: hand;
     }
 }
+

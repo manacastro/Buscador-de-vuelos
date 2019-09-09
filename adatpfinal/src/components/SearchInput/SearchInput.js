@@ -26,7 +26,7 @@ class SearchInput extends React.Component {
         this.setState({ text: event.target.value })
     }
     render() {
-        const { tag, icon, placeholder, type, relation, position, dimension } = this.props
+        const { value, onChange, tag, icon, placeholder, type, relation, position, dimension } = this.props
         return (
 
             <div className={`searchInput ${relation} ${position} ${dimension}`}>
@@ -34,8 +34,9 @@ class SearchInput extends React.Component {
                 <FontAwesomeIcon icon={icon} />
                 <input placeholder={placeholder}
                     type={type}
-                    onChange={this.updateText}
-                    value={this.state.text}></input>
+                    onChange={onChange}
+                    value={value}>
+                </input>
             </div>
         )
     }
