@@ -1,13 +1,11 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom';
-import Flights from 'components/Flights/Flights';
 import fondo from 'assets/images/big-ben.jpg';
-import CardInfo from 'components/CardInfo/CardInfo';
-
+import CardInfo from 'components/CardInfo/CardInfo'
 
 class FlightsResults extends React.Component {
   redirect = () => {
-    this.props.history.push('/contact')
+    this.props.history.push('/BookingRersults')
   }
   render() {
     return (
@@ -15,7 +13,6 @@ class FlightsResults extends React.Component {
         <div className='Contentbig-ben'>
           <img src={fondo} className='big-benImage' />
         </div>
-        <Flights />
         <h1>FlightsResults</h1>
         <button onClick={this.redirect}>Ir a contact</button>
         <CardInfo/>
@@ -23,7 +20,4 @@ class FlightsResults extends React.Component {
     )
   }
 }
-
 export default withRouter(FlightsResults)
-
-//withrouter le agrega -- high order component HOC - para redireccionar sin ser un link

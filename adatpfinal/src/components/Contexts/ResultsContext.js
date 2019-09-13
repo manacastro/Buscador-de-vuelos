@@ -28,7 +28,7 @@ class ResultsContextProvider extends React.Component{
             .then(res => res.json())
             .then(data => {           
                 const accessToken = data.access_token;
-                fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${iataOrigin}&destinationLocationCode=${iataDest}&departureDate=${fromDate}&returnDate=${toData}&adults=${adults}&max=5`, {
+                fetch(`https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=${iataOrigin}&destinationLocationCode=${iataDest}&departureDate=${fromDate}&returnDate=${toData}&adults=${adults}&max=50`, {
                         headers: {
                         'Authorization': `Bearer ${accessToken}`
                     }

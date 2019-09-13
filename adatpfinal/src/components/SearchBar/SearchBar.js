@@ -5,7 +5,7 @@ import SearchInput, { SEARCHINPUT_RELATIONS, SEARCHINPUT_POSITIONS, SEARCHINPUT_
 import Button from 'components/Button/Button';
 import { SearchContextConsumer } from 'components/Contexts/SearchContext';
 import { ResultsContextConsumer } from 'components/Contexts/ResultsContext';
-import { withRouter} from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 class SearchBar extends React.Component {
     redirect = () => {
@@ -31,14 +31,14 @@ class SearchBar extends React.Component {
                                     <SearchInput value={toData} onChange={modifyInfoToData} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
                                     <SearchInput value={adults} onChange={modifyAdults} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faUserFriends} type={'number'} placeholder={'1'} />
                                     <ResultsContextConsumer>
-                                    {
-                                        ({ loadFlights }) => (
-                                            <Button onClick={()=>{
-                                                loadFlights(iataOrigin, iataDest, fromDate, toData, adults) 
-                                                this.redirect()
-                                            }} />
-                                        )
-                                    }
+                                        {
+                                            ({ loadFlights }) => (
+                                                <Button onClick={() => {
+                                                    loadFlights(iataOrigin, iataDest, fromDate, toData, adults)
+                                                    this.redirect()
+                                                }} />
+                                            )
+                                        }
                                     </ResultsContextConsumer>
                                 </div>
                             )
@@ -52,4 +52,4 @@ class SearchBar extends React.Component {
 }
 
 
-export default withRouter (SearchBar)
+export default withRouter(SearchBar)
