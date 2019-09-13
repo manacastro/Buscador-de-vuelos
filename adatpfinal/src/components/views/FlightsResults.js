@@ -2,7 +2,7 @@ import React from 'react'
 import { withRouter } from 'react-router-dom';
 import Flights from 'components/Flights/Flights';
 import fondo from 'assets/images/big-ben.jpg';
-import Card from 'components/Card/Card';
+import CardInfo from 'components/CardInfo/CardInfo';
 
 
 class FlightsResults extends React.Component {
@@ -18,7 +18,7 @@ class FlightsResults extends React.Component {
         <Flights />
         <h1>FlightsResults</h1>
         <button onClick={this.redirect}>Ir a contact</button>
-        <Card/>
+        <CardInfo/>
       </div>
     )
   }

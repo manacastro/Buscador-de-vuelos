@@ -1,9 +1,9 @@
 import React from 'react';
 
-let iataOrigin = 'BUE';
+let iataOrigin = 'EZE';
 let iataDest = 'LON';
-let fromDate = '2019-08-22';
-let toData = '2019-08-31';
+let fromDate = '2019-09-22';
+let toData = '2019-09-30';
 let adults = '1';
 
 const API_KEY = 'bcnC8yJtGe7osLOHYaWodrwtLhrT0d1b';

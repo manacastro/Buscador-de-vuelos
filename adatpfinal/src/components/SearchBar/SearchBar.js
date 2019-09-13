@@ -33,7 +33,10 @@ class SearchBar extends React.Component {
                                     <ResultsContextConsumer>
                                     {
                                         ({ loadFlights }) => (
-                                            <Button onClick={() => loadFlights(iataOrigin, iataDest, fromDate, toData, adults), this.redirect} />
+                                            <Button onClick={()=>{
+                                                loadFlights(iataOrigin, iataDest, fromDate, toData, adults) 
+                                                this.redirect()
+                                            }} />
                                         )
                                     }
                                     </ResultsContextConsumer>

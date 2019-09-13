@@ -1,5 +1,6 @@
 import React from 'react';
 import { ResultsContextConsumer } from 'components/Contexts/ResultsContext';
+import Card from 'components/Card/Card';
 
 const CardInfo = () => (  
     <ResultsContextConsumer>
