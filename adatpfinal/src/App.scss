@@ -21,3 +21,12 @@
 .isoAdantrip{
     position: absolute;
 }
+.Contentbig-ben{
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+    .big-benImage{
+        transform: translateZ(0) scale(1.2);
+        filter: blur(8px);
+      }
+}

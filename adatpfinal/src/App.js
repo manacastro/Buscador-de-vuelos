@@ -21,7 +21,7 @@ function App() {
               <Route path='/FlightsResults' component={FlightsResults} />
               <Route path='/BookingFlights' component={BookingFlights} />
               <Route component={NoMatch} />
-            </Switch>
+            </Switch>           
           </BrowserRouter>
         </ResultsContextProvider>
       </SearchContextProvider>

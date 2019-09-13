@@ -34,7 +34,8 @@ class ResultsContextProvider extends React.Component{
                     }
                 })
                     .then(res => res.json())
-                    .then(data => {                                   
+                    .then(data => {    
+                        //console.log(data.data);                                                    
                         this.upDateFlightInfo(data.data)                        
                     })
             })
@@ -52,13 +53,13 @@ class ResultsContextProvider extends React.Component{
             <ResultsContext.Provider
             value={{
                 flights:this.state.flights,
-                loadFlights:this.loadFlights
+                loadFlights:this.loadFlights,
+                upDateFlightInfo:this.upDateFlightInfo
             }}>
                 {this.props.children}
             </ResultsContext.Provider>            
         )
     }
-
 }
 export const ResultsContextConsumer = ResultsContext.Consumer
 export default ResultsContextProvider
