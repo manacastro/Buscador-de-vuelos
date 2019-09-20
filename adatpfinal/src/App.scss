@@ -21,12 +21,14 @@
 .isoAdantrip{
     position: absolute;
 }
-.Contentbig-ben{
+.ContentBig-ben{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../src/assets/images/big-ben.jpg'); 
     height: 300px;
-    display: flex;
-    overflow: hidden;
-    .big-benImage{
-        transform: translateZ(0) scale(1.2);
-        filter: blur(8px);
-      }
+    filter: blur(3px);
+        
 }
