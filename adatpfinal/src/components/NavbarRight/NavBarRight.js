@@ -10,14 +10,16 @@ import DropdowAccount from 'components/DropdowAccount/DropdowAccount';
 const NavBarRight = () => (
     <section className='NavRight'>
         <h1 className='exchange'>USD</h1>
-        <Exchanges />
-        <PopularExchanges />
+        <div className='TotalExchanges'>
+            <Exchanges />
+            <PopularExchanges />
+        </div>
         <div className='ContentFlag'>
             <img src={flag} alt='' className='flag' />
         </div>
         <Languages />
         <MyAccount />
-        <DropdowAccount/>
+        <DropdowAccount />
     </section>
 )
 

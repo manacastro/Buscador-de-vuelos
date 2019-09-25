@@ -1,7 +1,8 @@
 .ContentExchange {
     position: absolute;
     margin-top: 138px;
-    visibility: hidden;
+    right: 5%;
+   
     .TitleContentCurrencies{
         font-family: 'Roboto', helvetica, Arial, sans-serif;
         letter-spacing: 0.33px;
@@ -50,4 +51,5 @@
             }
         }
     }
+   
 }

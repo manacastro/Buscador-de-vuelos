@@ -1,7 +1,7 @@
 .ContentPopularExchange {
     position: absolute;
-    margin-top: 20px;
-    visibility: hidden;
+    margin-top: 20px;  
+    right: 5%;
     .TitleContentPopularCurrencies{
         font-family: 'Roboto', helvetica, Arial, sans-serif;
         letter-spacing: 0.33px;
@@ -49,4 +49,13 @@
             }
         }
     }
+    &:hover {
+        visibility: visible;
+        cursor: pointer;
+    }
+    &:hover~.ContentExchange{
+        visibility: visible;
+        cursor: pointer;
+    }
+   
 }
