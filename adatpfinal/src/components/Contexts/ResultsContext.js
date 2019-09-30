@@ -36,7 +36,7 @@ class ResultsContextProvider extends React.Component {
                     .then(res => res.json())
                     .then(data => {
                         //console.log(data.data);   
-                        debugger;
+                        //debugger;
                         this.upDateFlightInfo(data.data)
                     })
             })
@@ -71,6 +71,7 @@ class ResultsContextProvider extends React.Component {
             } //Asegurarse que funcione independientemente de la cantidad de segmentos que haya por cada itinerario.
         }))
         this.setState({ flights: flightsInfo })
+         
     }
     render() {
         return (
