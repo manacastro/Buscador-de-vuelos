@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from "moment";
+import './AirportDateTime.scss';
 
 class AirportDateTime extends React.Component {
     state = {
@@ -18,10 +19,10 @@ class AirportDateTime extends React.Component {
                         <p className='time'>{time}</p>
                         <b className='ampm'>{ampm}</b>
                     </div>
+                    <p className='exit'>{this.props.airport}</p>
                     <div className='date-container'>
                         <p>{formattedDate}</p>
                     </div>
-                    <p>{this.props.airport}</p>
                 </div>
             </div>
         )

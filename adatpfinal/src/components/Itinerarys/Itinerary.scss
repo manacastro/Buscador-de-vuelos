@@ -1,0 +1,14 @@
+.airports{
+    display: flex;
+    position: absolute;
+    margin-top: 3%;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.itineraryPath{
+    width: 180px;
+    border-top: 1px solid gray;
+    margin-top: 2%;
+    position: absolute;
+}
