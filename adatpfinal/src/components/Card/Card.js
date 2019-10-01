@@ -1,31 +1,28 @@
 import React from 'react';
 import './Card.scss';
+import AirportDateTime from 'components/AirportDateTime/AirportDateTime';
 
 const Card = ({ flightInfo }) => (
-    
+ 
     <section className='sectionCard'>
         {/* <p>{flightInfo.id}</p> */}
         <div className='price'>${flightInfo.price}</div>
         <p className='Subprice'>economy</p>
         <button className='buttonbookNow'>Book Now</button>
         <div className='going'>
-            <div className='originFulldate'>{flightInfo.first.originFulldate}</div>
-            <div className='destinationFulldate'>{flightInfo.first.destinationFulldate}</div>
+            <AirportDateTime dateTime={flightInfo.first.originFulldate} airport={flightInfo.first.originIata} />
             <div className='totalDuration'>{flightInfo.first.totalDuration}</div>
-            <div className='originIata'>{flightInfo.first.originIata}</div>
             <div className='originIntermediateIata'>{flightInfo.first.originIntermediateIata}</div>
-            <div className='destinationIata'>{flightInfo.first.destinationIata}</div>
+            <AirportDateTime dateTime={flightInfo.first.destinationFulldate} airport={flightInfo.first.destinationIata} />
             <div className='originCarrierCode'>Operated by {flightInfo.first.originCarrierCode}</div>
             {/* <div className='destinationCarrierCode'>Operated by {flightInfo.first.destinationCarrierCode}</div> */}
         </div>
         <div>---------------------------------------------------------------------</div>
         <div className='return'>
-            <div className='originFulldateReturn'>{flightInfo.second.originFulldate}</div>
-            <div className='destinationFulldateReturn'>{flightInfo.second.destinationFulldate}</div>
+            <AirportDateTime dateTime={flightInfo.second.originFulldate} airport={flightInfo.second.originIata} />    
             <div className='totalDurationReturn'>{flightInfo.second.totalDuration}</div>
-            <div className='originIataReturn'>{flightInfo.second.originIata}</div>
+            <AirportDateTime dateTime={flightInfo.second.destinationFulldate} airport={flightInfo.second.destinationIata} />
             <div className='originIntermediateIataReturn'>{flightInfo.second.originIntermediateIata}</div>
-            <div className='destinationIataReturn'>{flightInfo.second.destinationIata}</div>
             <div className='originCarrierCodeReturn'>Operated by {flightInfo.second.originCarrierCode}</div>
             {/* <div className='destinationCarrierCodeReturn'>Operated by {flightInfo.second.destinationCarrierCode}</div> */}
         </div>

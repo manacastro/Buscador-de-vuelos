@@ -6,9 +6,7 @@ const CardInfo = () => (
     <ResultsContextConsumer>
         {
             ({ flights }) =>                 
-                flights.map(flightInfo =>
-                <Card flightInfo={flightInfo} />)               
-            
+                flights.map(flightInfo => <Card flightInfo={flightInfo} />)    
         }
     </ResultsContextConsumer> 
 )
