@@ -19,16 +19,18 @@ const Card = ({ flightInfo }) => (
                     <Itinerary totalDuration={flightInfo.first.totalDuration} originIata={flightInfo.first.originIata} destinationIata={flightInfo.first.destinationIata} segmentCount={flightInfo.first.originCount} intermediateIATA={flightInfo.first.originIntermediateIata} />
                     <AirportDateTime dateTime={flightInfo.first.destinationFulldate} airport={flightInfo.first.destinationIata} />                    
                 </div>
+                <img className="carrierLogo" src={"https://content.airhex.com/content/logos/airlines_" + flightInfo.first.originCarrierCode + "_200_200_s.png"}></img>
                 <div className='carrierCode'>Operated by {flightInfo.first.originCarrierCode}</div>
             </section>
-            <div className='separator'>--------------------------------------------------------------------------------</div>
+            <div className='separator'>-------------------------------------------------------------------------</div>
             <section className='section'>
                 <div className='dataFlightbook'>
                     <AirportDateTime dateTime={flightInfo.second.originFulldate} airport={flightInfo.second.originIata} />
                     <Itinerary totalDuration={flightInfo.second.totalDuration} originIata={flightInfo.second.originIata} destinationIata={flightInfo.second.destinationIata} segmentCount={flightInfo.second.originCount} intermediateIATA={flightInfo.first.originIntermediateIata} />
                     <AirportDateTime dateTime={flightInfo.second.destinationFulldate} airport={flightInfo.second.destinationIata} />                    
                 </div>
-                <div className='carrierCode'>Operated by {flightInfo.second.originCarrierCode}</div>
+                <img className="carrierLogo" src={"https://content.airhex.com/content/logos/airlines_" + flightInfo.second.originCarrierCode + "_200_200_s.png"}></img>
+                <div className='carrierCode'>Operated by {flightInfo.first.originCarrierCode}</div>
             </section>
         </section>
     </section>

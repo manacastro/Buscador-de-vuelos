@@ -1,14 +1,29 @@
-.airports{
+.itineray {
     display: flex;
-    position: absolute;
-    margin-top: 3%;
-    width: 180px;
-    justify-content: space-between;
-}
+    width: 100%;
+    justify-content: center;
+    .duration {
+        color: gray;
+        font-size: 12px;
+    }
 
-.itineraryPath{
-    width: 180px;
-    border-top: 1px solid gray;
-    margin-top: 2%;
-    position: absolute;
+    .sectionAirports {
+        display: flex;
+        position: absolute;
+        margin-top: 3%;
+        width: 180px;
+        justify-content: space-between;
+
+        .airports {
+            color: gray;
+            font-size: 10px;
+        }
+    }
+
+    .itineraryPath {
+        width: 180px;
+        border-top: 1px solid gainsboro;
+        margin-top: 2%;
+        position: absolute;
+    }
 }
