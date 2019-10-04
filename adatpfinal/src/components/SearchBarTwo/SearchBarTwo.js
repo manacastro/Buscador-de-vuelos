@@ -6,7 +6,7 @@ import Button from 'components/Button/Button';
 import { SearchContextConsumer } from 'components/Contexts/SearchContext';
 import { ResultsContextConsumer } from 'components/Contexts/ResultsContext';
 import { withRouter } from 'react-router-dom'
-import TitleOnSearchBar from 'components/TitleOnSearchBar/TitleOnSearchBar';
+//import TitleOnSearchBar from 'components/TitleOnSearchBar/TitleOnSearchBar';
 
 class SearchBarTwo extends React.Component {
     redirect = () => {

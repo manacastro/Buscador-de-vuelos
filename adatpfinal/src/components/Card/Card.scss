@@ -1,19 +1,20 @@
 .sectionCard {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
     font-family: 'Roboto', helvetica, Arial, sans-serif;
-    margin:1%;
+    margin: 3%;
     padding: 2%;
     background-color: white;
     height: 250px;
-    
+
     .Book {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-left: 4%;
+
         .price {
             margin-top: 2%;
             font-size: 22px;
@@ -38,7 +39,11 @@
     }
 
     .infoBook {
-        width: 100%;        
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
         .section {
             display: flex;
             flex-direction: row-reverse;
@@ -48,22 +53,29 @@
 
             .dataFlightbook {
                 display: flex;
-                width: 100%;
+                width: 385px;
                 justify-content: space-between;
+
                 .originIntermediateIata {
                     font-size: 12px;
                     color: gray;
                     font-family: helvetica, Arial, sans-serif;
                 }
             }
-            .carrierLogo{
+            .contentLogo{
+                justify-content: center;
+                display: flex;
+                width: 25;
+                flex-direction: column;
+            .carrierLogo {
                 width: 75px;
                 height: 75px;
                 display: flex;
                 position: relative;
-                right: 15%;
+                right: 7%;
                 top: 6%;
             }
+
             .carrierCode {
                 color: gray;
                 display: flex;
@@ -71,12 +83,15 @@
                 //margin-top: 18%;
                 font-size: 11px;
                 font-family: helvetica, Arial, sans-serif;
-                width: 30%;
+                width: 100%;
             }
         }
+        }
+
         .separator {
-            color: gray;
+            color: gainsboro;
             height: 35px;
+            margin-left: 20%;
         }
 
     }

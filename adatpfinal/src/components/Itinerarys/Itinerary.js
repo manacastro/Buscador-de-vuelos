@@ -2,7 +2,7 @@ import React from 'react';
 //import moment from "moment";
 import './Itinerary.scss';
 import 'react-input-range/lib/css/index.css';
-import InputRange from 'react-input-range';
+//import InputRange from 'react-input-range';
 
 class Itinerary extends React.Component {
   constructor(props) {
