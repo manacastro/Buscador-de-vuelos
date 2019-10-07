@@ -4,7 +4,9 @@ import { withRouter } from 'react-router-dom';
 import CardInfo from 'components/CardInfo/CardInfo'
 import SearchBarTwo from 'components/SearchBarTwo/SearchBarTwo';
 import TitleOnSearchBar from 'components/TitleOnSearchBar/TitleOnSearchBar';
-import InputRadio from 'components/InputRadio/InputRadio';
+import AsideLeft from 'components/AsideLeft/AsideLeft';
+import AsideRight from 'components/AsideRight/AsideRight';
+
 
 class FlightsResults extends React.Component {
   redirect = () => {
@@ -14,12 +16,13 @@ class FlightsResults extends React.Component {
     return (
       <div className='GeneralFlightsResults'>
         <SearchBarTwo />
-        <TitleOnSearchBar />
-        <InputRadio/>
-        <div className='ContentBig-ben'>
-          {/* <img src={fondo} className='big-benImage' /> */}
-        </div>
-        <CardInfo />
+        <TitleOnSearchBar />        
+        <div className='ContentBig-ben'></div>
+        <div className='mainColumn'>
+          <AsideLeft/>
+          <CardInfo />
+          <AsideRight/>
+        </div>       
       </div>
     )
   }

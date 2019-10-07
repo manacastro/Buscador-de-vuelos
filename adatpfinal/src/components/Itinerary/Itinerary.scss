@@ -1,4 +1,4 @@
-.itineray {
+.itinerary {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -13,18 +13,18 @@
         margin-top: 3%;
         width: 180px;
         justify-content: space-between;
-
+                
         .airports {
             color: gray;
             font-size: 10px;
-            margin-top: 13%;
+            margin-top: 18%;
         }
     }
 
     .itineraryPath {
         width: 180px;
-        border-top: 1px solid gainsboro;
-        margin-top: 4%;
+        border-top: 2px solid gainsboro;
+        margin-top: 7%;
         position: absolute;
     }
 }

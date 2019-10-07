@@ -80,10 +80,10 @@
 // //         .then(res => console.log(res))
 // // }
 
-// // const cityname = iata => {
-// //     fetch(`https://airports-dpvsjndcod.now.sh/city/${iata}`)
-// //         .then(response => response.json())
-// //         .then(res => console.log(res.state))
-// // }
+// const cityname = iata => {
+//     fetch(`https://airports-dpvsjndcod.now.sh/city/${iata}`)
+//         .then(response => response.json())
+//         .then(res => console.log(res.state))
+// }
 
 // export default Flights;

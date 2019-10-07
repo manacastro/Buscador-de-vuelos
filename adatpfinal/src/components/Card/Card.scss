@@ -1,5 +1,5 @@
 .sectionCard {
-    width: 45%;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
@@ -43,14 +43,17 @@
         display: flex;
         position: relative;
         flex-direction: column;
+        .sep{
+            border-bottom: 1px dashed gainsboro;
 
+        }
         .section {
             display: flex;
             flex-direction: row-reverse;
             width: 100%;
             justify-content: space-between;
             height: 105px;
-
+            margin-top: 4%;
             .dataFlightbook {
                 display: flex;
                 width: 385px;
