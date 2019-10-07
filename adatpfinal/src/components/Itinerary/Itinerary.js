@@ -21,14 +21,19 @@ class Itinerary extends React.Component {
       <div className='itinerary'>
         <strong className='duration'>{duration}</strong>
         <section className='sectionAirports'>
-          <div className='SectionPlane'>
-            <PlanesDeparture icon={faPlane} className='MediaIcon'/>
-            <div className='airports'>{originIata}</div>
+          <div className='sectionPlane initial'>
+            <PlanesDeparture icon={faPlane} className='MediaIcon' />
+            <div className='point'></div>
+            <div className='airport'>{originIata}</div>
           </div>
-          <div className='airports'>{intermediateIATA}</div>
-          <div className='SectionPlane'>
+          <div className='intermediate'>
+            <div className={intermediateIATA == "" ? 'intermediatePoint hide' : 'intermediatePoint show'}></div>
+            <div className='intermediateAirport'>{intermediateIATA}</div>
+          </div>
+          <div className='sectionPlane ending'>
             <PlanesArrival icon={faPlane} className='MediaIcon' />
-            <div className='airports'>{destinationIata}</div>
+            <div className='point'></div>
+            <div className='airport'>{destinationIata}</div>
           </div>
         </section>
         <div className='itineraryPath' />

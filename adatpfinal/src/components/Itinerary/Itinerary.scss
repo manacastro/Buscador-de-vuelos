@@ -10,14 +10,58 @@
     .sectionAirports {
         display: flex;
         position: absolute;
-        margin-top: 3%;
+        margin-top: 7px;
         width: 180px;
         justify-content: space-between;
+        .sectionPlane{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 58px;
+            .point{
+                width: 7px;
+                height: 7px;
+                background-color: blue;
+                border-radius: 50%;               
+                position: relative;
+                z-index: 1;
+             } 
+            .airport {
+                color: gray;
+                font-size: 10px;
+                margin-top: 18%;
+            }
+        }
+        .initial{
+            align-items: flex-start;
+         }   
+         .ending{
+            align-items: flex-end;
+         }
+        .intermediate{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 58px;
+            align-items: center;
+
+            .intermediatePoint{
+                width: 7px;
+                height: 7px;
+                background-color: gainsboro;
+                border-radius: 50%;               
+                position: relative;
+                z-index: 1;
                 
-        .airports {
-            color: gray;
-            font-size: 10px;
-            margin-top: 18%;
+            }
+            .hide{
+                visibility: hidden;
+            }
+            .intermediateAirport{
+                color: gray;
+                font-size: 10px;
+                margin-top: 46%;
+            }
         }
     }
 

@@ -7,13 +7,13 @@
     margin: 3%;
     padding: 2%;
     background-color: white;
-    height: 250px;
+    height: 300px;
 
     .Book {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 4%;
+        margin-right: 2%;
 
         .price {
             margin-top: 2%;
@@ -51,9 +51,10 @@
             display: flex;
             flex-direction: row-reverse;
             width: 100%;
-            justify-content: space-between;
-            height: 105px;
+            justify-content: space-evenly;
+            height: 100px;
             margin-top: 4%;
+            padding-bottom: 2%;
             .dataFlightbook {
                 display: flex;
                 width: 385px;
@@ -66,13 +67,13 @@
                 }
             }
             .contentLogo{
-                justify-content: center;
-                display: flex;
-                width: 25;
+                justify-content: space-between;
+                display: flex;                
                 flex-direction: column;
+                align-items: center;
             .carrierLogo {
-                width: 75px;
-                height: 75px;
+                width: 60px;
+                height: 60px;
                 display: flex;
                 position: relative;
                 right: 7%;

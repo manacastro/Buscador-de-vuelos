@@ -35,8 +35,7 @@ class ResultsContextProvider extends React.Component {
                 })
                     .then(res => res.json())
                     .then(data => {
-                        debugger;
-
+                        
                         // *-*-*-*-* BORRAR *-*-*-*
                         let mockedData = [
                             {

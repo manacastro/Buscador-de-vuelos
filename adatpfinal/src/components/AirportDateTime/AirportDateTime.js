@@ -14,9 +14,11 @@ class AirportDateTime extends React.Component {
         const time = moment(this.props.dateTime).format('hh:mm');
         const ampm = moment(this.props.dateTime).format('A');
 
-        fetch(`https://airports-dpvsjndcod.now.sh/city/${this.props.airport}`)
-                .then(response => response.json())
-                .then(res => this.setState({ airportState: res.state }))
+        if(this.state.airportState === ""){
+            fetch(`https://airports-dpvsjndcod.now.sh/city/${this.props.airport}`)
+                    .then(response => response.json())
+                    .then(res => this.setState({ airportState: res.state }))
+        }
 
         return (
             <div className='CardFlight'>
