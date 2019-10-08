@@ -6,6 +6,7 @@ import SearchBarTwo from 'components/SearchBarTwo/SearchBarTwo';
 import TitleOnSearchBar from 'components/TitleOnSearchBar/TitleOnSearchBar';
 import AsideLeft from 'components/AsideLeft/AsideLeft';
 import AsideRight from 'components/AsideRight/AsideRight';
+import FlightResultFooter from 'components/FlightResultFooter/FlightResultFooter'
 
 
 class FlightsResults extends React.Component {
@@ -22,7 +23,8 @@ class FlightsResults extends React.Component {
           <AsideLeft/>
           <CardInfo />
           <AsideRight/>
-        </div>       
+        </div> 
+        <FlightResultFooter/>      
       </div>
     )
   }

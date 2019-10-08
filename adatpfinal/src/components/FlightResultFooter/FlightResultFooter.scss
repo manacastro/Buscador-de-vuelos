@@ -1,0 +1,37 @@
+.flightResultFooter{
+    display: flex;
+    margin-top: 22%;
+    background-color: whitesmoke;
+    .footerIso{
+        width: 25%;
+        flex-direction: column;
+        display: flex;
+        .iso{
+
+        }
+        .textIso{
+
+        }
+    }
+    .ulFooter{
+        display: flex;
+        .linksNabFooter{
+            .title{
+
+            }
+            .linksFooter {
+                list-style: none; 
+                .linkNameFooter{
+                    text-decoration: none;
+                    color: gray;
+                }
+            }
+           
+        }
+    }
+    .imgfinal{
+    display: flex;
+    position: relative;
+    background-color: dodgerblue;
+    }
+}

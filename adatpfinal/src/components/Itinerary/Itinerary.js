@@ -7,7 +7,6 @@ import PlanesDeparture from 'components/PlanesDeparture/PlanesDeparture';
 class Itinerary extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = { value: 0 };
   }
 

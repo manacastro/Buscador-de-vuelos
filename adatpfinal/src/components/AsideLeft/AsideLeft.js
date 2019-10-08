@@ -3,6 +3,7 @@ import Checkbox from 'components/Checkbox/Checkbok'
 import Advertisement, {ADVERTISEMENT_SIZES} from 'components/Advertisement/Advertisement'
 import publicidad from '../../assets/images/publicidad.jpg'
 import './AsideLeft.scss'
+import PriceBar from 'components/PriceBar/PriceBar'
 
 const AsideLeft = () => (
     <div className='asideLeft'>
@@ -24,6 +25,7 @@ const AsideLeft = () => (
             price2={`412`}
             price3={`385`}
         />
+        <PriceBar/>
         <Advertisement
             size={ADVERTISEMENT_SIZES.SIMPLE}
             src={publicidad}
