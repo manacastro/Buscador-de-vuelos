@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import adantrip from 'assets/images/adantrip.png';
+import adantripBlack from 'assets/images/adantripBlack.png';
 import footerSubscribe from 'assets/images/footerSubscribe.png';
 import './FlightResultFooter.scss';
 
@@ -8,211 +8,91 @@ import './FlightResultFooter.scss';
 const FlightResultFooter = () => (
     <div className='flightResultFooter'>
         <div className='footerIso'>
-            <img src={adantrip} alt='' className='iso' />
-            <p className='textIso'>Curabitur magnis cursus nam tempor quam risus urna mattis porttitor lorem urna dolor vitae hac
-            Ultrices lacinia aliquet euismod aptent netus dis praesent magna elit ultricies malesuada volutpat amet lacus</p>
+            <a className='contentIso'>
+                <img src={adantripBlack} alt='' className='iso' />
+            </a>
+            <p className='textIso'>Curabitur magnis cursus nam tempor quam risus urna mattis porttitor lorem urna dolor vitae hac</p>
+            <p className='textIso'>Ultrices lacinia aliquet euismod aptent netus dis praesent magna elit ultricies malesuada volutpat amet lacus</p>
+
         </div>
         <div className='ulFooter'>
             <ul className='linksNabFooter' >
                 <h1 className='title'>Travel Mate</h1>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Abaut Travel Mate</NavLink>
+                    <a href='#' className='linkNameFooter'>Abaut Travel Mate</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Mobile App</NavLink>
+                    <a href='#' className='linkNameFooter'> Mobile App</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Customer Support</NavLink>
+                    <a href='#' className='linkNameFooter'>Customer Support</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Advertising</NavLink>
+                    <a href='#' className='linkNameFooter'>Advertising</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Jobs</NavLink>
+                    <a href='#' className='linkNameFooter'>Jobs</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Privacy Policy</NavLink>
+                    <a href='#' className='linkNameFooter'>Privacy Policy</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Terms of Use</NavLink>
+                    <a href='#' className='linkNameFooter'>Terms of Use</a>
                 </li>
             </ul>
             <ul className='linksNabFooter'>
                 <h1 className='title'>Explore</h1>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Countries</NavLink>
+                    <a href='#' className='linkNameFooter'>Countries</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Regions</NavLink>
+                    <a href='#' className='linkNameFooter'>Regions</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Cities</NavLink>
+                    <a href='#' className='linkNameFooter'>Cities</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Districs</NavLink>
+                    <a href='#' className='linkNameFooter'>Districs</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Airports</NavLink>
+                    <a href='#' className='linkNameFooter'>Airports</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Hotels</NavLink>
+                    <a href='#' className='linkNameFooter'> Hotels</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Places of Interest</NavLink>
+                    <a href='#' className='linkNameFooter'>Places of Interest</a>
                 </li>
             </ul>
             <ul className='linksNabFooter'>
                 <h1 className='title'>Book</h1>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Apartments</NavLink>
+                    <a href='#' className='linkNameFooter'>Apartments</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Resorts</NavLink>
+                    <a href='#' className='linkNameFooter'>Resorts</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Villas</NavLink>
+                    <a href='#' className='linkNameFooter'>Villas</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Hostels</NavLink>
+                    <a href='#' className='linkNameFooter'>Hostels</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        B&Bs</NavLink>
+                    <a href='#' className='linkNameFooter'>B&Bs</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Guesthouses</NavLink>
+                    <a href='#' className='linkNameFooter'>Guesthouses</a>
                 </li>
                 <li className='linksFooter'>
-                    <NavLink
-                        exact
-                        to='/NoMatch'
-                        activeStyle={{ color: 'Black' }}
-                        activeClassName='activo'
-                        className='linkNameFooter'>
-                        Hotel Chains</NavLink>
+                    <a href='#' className='linkNameFooter'>Hotel Chains</a>
                 </li>
             </ul>
         </div>
-        <img src={footerSubscribe} alt='' className='imgfinal' />
-    </div>
+        <div className='contentImgfinal'>
+            <img src={footerSubscribe} alt='' className='imgfinal' />
+        </div>
+
+    </div >
 )
 export default FlightResultFooter
