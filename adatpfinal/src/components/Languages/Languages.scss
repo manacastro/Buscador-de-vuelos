@@ -31,7 +31,9 @@
         .ContentCountries {
             display: flex;
             padding: 5px;
-
+            &:hover{
+                background-color: gainsboro;
+            }
             .FlagImage {
                 height: 23px;
             }

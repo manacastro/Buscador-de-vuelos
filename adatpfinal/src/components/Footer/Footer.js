@@ -72,12 +72,12 @@ const Footer = () => (
             </li>
         </ul>
         <ul className='Media'>
-            <li className='MediaContainer'><SocialMedia icon={faFacebookF} className='MediaIcon' /></li>
-            <li className='MediaContainer'><SocialMedia icon={faTwitter} className='MediaIcon'/></li>
-            <li className='MediaContainer'><SocialMedia icon={faGoogle} className='MediaIcon'/></li>
-            <li className='MediaContainer'><SocialMedia icon={faInstagram} className='MediaIcon'/></li>
+            <li className='MediaContainer'><a href='#' ><SocialMedia icon={faFacebookF} className='MediaIcon' /></a></li>
+            <li className='MediaContainer'><a href='#' ><SocialMedia icon={faTwitter} className='MediaIcon'/></a></li>
+            <li className='MediaContainer'><a href='#' ><SocialMedia icon={faGoogle} className='MediaIcon'/></a></li>
+            <li className='MediaContainer'><a href='#' ><SocialMedia icon={faInstagram} className='MediaIcon'/></a></li>
         </ul>
-        <div className='Copyright'>Copyright © 2019 Adantrip. All rights reserved.</div>
+        <div className='Copyright'>Copyright © 2019 <a href='#' className='footerAdantrip'>Adantrip</a> All rights reserved.</div>
     </section>
 )
 

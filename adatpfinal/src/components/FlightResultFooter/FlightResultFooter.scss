@@ -4,6 +4,7 @@
     background-color: whitesmoke;
     padding-left: 8%;
     padding-top: 2%;
+    height: 204px;
     .footerIso{
         width: 20%;
         flex-direction: column;
@@ -27,6 +28,8 @@
     }
     .ulFooter{
         display: flex;
+        width: 500px;
+        justify-content: space-evenly;
         .linksNabFooter{
             
             .title{
@@ -52,11 +55,5 @@
             }
            
         }
-    }
-    .imgfinal{
-    display: flex;
-    position: relative;
-    background-color: dodgerblue;
-    height: 230px;
-    }
+    }    
 }

@@ -15,8 +15,8 @@ class SearchBarTwo extends React.Component {
         const { title, subtitle } = this.props
         return (
             <div className='searchTwo'>
-                <h1>{title}</h1>
-                <p>{subtitle}</p>
+                {/* <h1>{title}</h1>
+                <p>{subtitle}</p> */}
                 <SearchContextConsumer>
                     {
                         ({ iataOrigin, modifyInfoiataOrigin,

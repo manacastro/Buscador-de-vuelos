@@ -3,7 +3,7 @@ import './SocialMedia.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SocialMedia = ({icon}) => (
-    <div className ='sectionMedia'>
+    <div className ='sectionMedia'>        
         <FontAwesomeIcon icon={icon} className='MediaIcon'/>         
     </div>
 
