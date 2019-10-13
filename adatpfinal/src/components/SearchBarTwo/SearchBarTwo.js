@@ -25,7 +25,7 @@ class SearchBarTwo extends React.Component {
                             toData, modifyInfoToData,
                             adults, modifyAdults }) => (
                                 <div className='searchBarTwo'>  
-                                                                     
+                                                                 
                                     <SearchInput value={iataOrigin} onChange={modifyInfoiataOrigin} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Departure'} />
                                     <SearchInput value={iataDest} onChange={modifyInfoIataDest} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Arrival'} />
                                     <SearchInput value={fromDate} onChange={modifyInfoFromDate} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />

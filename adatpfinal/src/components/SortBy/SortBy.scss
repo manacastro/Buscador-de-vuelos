@@ -81,7 +81,13 @@
         border: 1px solid lightgrey;
         border-radius: 3px;
         background-color: white; 
-        margin-top: 20%;
+        margin-top: 5%;
+        z-index: 2;
+        position: absolute;
+        margin-left: 20%;
+        -webkit-box-shadow: 2px -1px 25px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px -1px 25px -6px rgba(0,0,0,0.75);
+        box-shadow: 2px -1px 25px -6px rgba(0,0,0,0.75);
         .listDropdownMenu{
             display: flex;
             flex-direction: column;

@@ -8,7 +8,6 @@ import AsideLeft from 'components/AsideLeft/AsideLeft';
 import AsideRight from 'components/AsideRight/AsideRight';
 import FlightResultFooter from 'components/FlightResultFooter/FlightResultFooter'
 
-
 class FlightsResults extends React.Component {
   redirect = () => {
     this.props.history.push('/BookingResults')

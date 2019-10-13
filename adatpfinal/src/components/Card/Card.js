@@ -5,7 +5,6 @@ import Itinerary from 'components/Itinerary/Itinerary';
 import Airline from 'components/Airline/Airline'
 
 const Card = ({ flightInfo }) => (
-
     <section className='sectionCard'>
         <div className='Book'>
             <div className='price'>${flightInfo.price}</div>
