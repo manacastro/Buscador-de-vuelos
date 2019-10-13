@@ -1,10 +1,12 @@
 import React from 'react';
 import { ResultsContextConsumer } from 'components/Contexts/ResultsContext';
 import Card from 'components/Card/Card';
+import SortBy from 'components/SortBy/SortBy'
 import './CardInfo.scss'
 
 const CardInfo = () => (
     <div className='cardGroup'>
+        <SortBy/>
         <ResultsContextConsumer>
             {
                 ({ flights }) =>

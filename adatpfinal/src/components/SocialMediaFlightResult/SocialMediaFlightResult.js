@@ -1,9 +1,9 @@
 import React from 'react'
-import './FooterFlightResult.scss';
+import './SocialMediaFlightResult.scss';
 import { faFacebookF, faTwitter, faGoogle, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import SocialMedia from 'components/SocialMedia/SocialMedia'
 
-const FooterFlightResult = () => (
+const SocialMediaFlightResult = () => (
     <section className='sectionFooterFlightResult'>
         <ul className='Media'>
             <li className='MediaContainer'><a href='#' ><SocialMedia icon={faFacebookF} className='MediaIcon' /></a></li>
@@ -15,4 +15,4 @@ const FooterFlightResult = () => (
     </section>
 )
 
-export default FooterFlightResult
+export default SocialMediaFlightResult

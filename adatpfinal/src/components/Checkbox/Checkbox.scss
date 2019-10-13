@@ -1,38 +1,47 @@
 @import '../../styles/variables';
 
 .checkbox {
-    width: 200px;
-    height: 100px;
-    font-family: $main-font;
-    font-size: 12px;
-    color: #555;
-    padding: 10px 0;
-    border-bottom: solid 1px rgb(185, 185, 185);
-    box-sizing: border-box;
-    h3 {
-        margin: 0 0 10px 0;
-        display: block;
-        text-transform: uppercase;
-    }
-    .options {
+    margin-right: 7%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    .group {
+        width: 200px;
+        height: 30px;
         display: flex;
-        flex-direction: column;
-        .group {
-            width: 200px;
-            height: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .option {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .option {
+            flex-direction: column;
+            justify-content: left;
+
+            .line {
                 display: flex;
                 align-items: center;
-                font-size: 12px;
                 cursor: pointer;
+
+                h4 {
+                    font-weight: 200;
+                    margin: 0;
+                    width:155px;
+                    font-size: 14px;
+                    color: #6a6a6a;
+                }
             }
-            p {
-                margin: 0;
-                font-size: 11px;
+
+            .range {
+                h4 {
+                    font-size: 10px;
+                    margin: 0 0 0 20px;
+                }
             }
+        }
+
+        h4 {
+            font-weight: 200;                         
+            font-size: 11px;
+            opacity: 0.65;
         }
     }
 }

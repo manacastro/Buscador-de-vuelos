@@ -5,15 +5,16 @@ import publicidad2 from '../../assets/images/publicidad2.jpg'
 import './AsideRight.scss'
 
 const AsideRight = () => (
-    <div className='asideRight'>
+    <div className='asideRight sticky-column'>
         <Advertisement 
-            size={ADVERTISEMENT_SIZES.DOUBLE}            
+            size={ADVERTISEMENT_SIZES.DOUBLE}
             src={publicidad1}
-        />        
+        />
         <Advertisement 
             size={ADVERTISEMENT_SIZES.SIMPLE}
             src={publicidad2}
         />
     </div>
 )
+
 export default AsideRight

@@ -6,7 +6,8 @@ export const ADVERTISEMENT_SIZES = {
     DOUBLE: 'double'
 }
 const Advertisement = ({src, size}) => (
-    <div className={`advertisement ${size} `}>
+    <div className={`Advertisement ${size} `}>
+        <p>Advertisment</p>
         <img src={src}/>
     </div>
 )

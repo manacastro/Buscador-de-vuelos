@@ -4,10 +4,11 @@
     flex-direction: row-reverse;
     align-items: baseline;
     font-family: 'Roboto', helvetica, Arial, sans-serif;
-    margin: 3%;
     padding: 2%;
     background-color: white;
     height: 300px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
 
     .Book {
         display: flex;

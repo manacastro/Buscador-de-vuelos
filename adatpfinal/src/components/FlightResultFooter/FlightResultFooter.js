@@ -2,7 +2,7 @@ import React from 'react';
 import adantripBlack from 'assets/images/adantripBlack.png';
 import './FlightResultFooter.scss';
 import SecretDeals from 'components/SecretDeals/SecretDeals';
-import FooterFlightResult from 'components/FooterFlightResult/FooterFlightResult';
+import SocialMediaFlightResult from 'components/SocialMediaFlightResult/SocialMediaFlightResult';
 
 
 const FlightResultFooter = () => (
@@ -90,9 +90,9 @@ const FlightResultFooter = () => (
                     </li>
                 </ul>
             </div>
+            <SecretDeals />
         </div >
-        <SecretDeals />
-        <FooterFlightResult/>
+        <SocialMediaFlightResult/>
     </>
 )
 export default FlightResultFooter

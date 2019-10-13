@@ -32,3 +32,10 @@
     filter: blur(3px);
         
 }
+
+// Sticky samples: https://alligator.io/css/position-sticky/
+.sticky-column{
+  position: sticky;
+  bottom: 1rem;
+  align-self: flex-end;
+}

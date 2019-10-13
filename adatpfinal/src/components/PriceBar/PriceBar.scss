@@ -75,9 +75,6 @@
     outline: none;
     position: absolute;
     top: 50%;
-    // -webkit-transition: box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
-    // transition: box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
-    //transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
     width: 1rem;
   }
