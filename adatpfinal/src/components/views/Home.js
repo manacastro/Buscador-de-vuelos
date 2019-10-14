@@ -5,12 +5,13 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import SearchHeader from 'components/SearchHeader/SearchHeader';
 import Footer from 'components/Footer/Footer';
 import SearchBar from 'components/SearchBar/SearchBar';
+import { SEARCHINPUT_RELATIONS, SEARCHINPUT_POSITIONS, SEARCHINPUT_DIMENSIONS } from 'components/SearchInput/SearchInput';
 import InputRadio from 'components/InputRadio/InputRadio';
 
 const Home = () => (
     <div className='general'>
         <SearchHeader/>
-        <SearchBar/>
+        <SearchBar relation={SEARCHINPUT_RELATIONS.JOINED} parent="home"/>
         <InputRadio/>
         <section className='FeatureSection'>
             <Feature icon={faCheckCircle} title={'Explore the World'} text={'Start to discrover. We will help you to visit any place you can imagine'} />

@@ -26,18 +26,27 @@ class SearchInput extends React.Component {
         this.setState({ text: event.target.value })
     }
     render() {
-        const { value, onChange, tag, icon, placeholder, type, relation, position, dimension } = this.props
-        return (
+        const { value, onChange, tag, icon, placeholder, type, relation, position, dimension, parent } = this.props
 
-            <div className={`searchInput ${relation} ${position} ${dimension}`}>
-                <p>{tag}</p>
-                <FontAwesomeIcon icon={icon} />
-                <input placeholder={placeholder}
-                    type={type}
-                    onChange={onChange}
-                    value={value}>
-                </input>
+        let tagContainer = "";
+
+        if (parent == "interior") {
+            tagContainer = <p class="inputTag">{tag}</p>
+        }
+
+        return (
+            <div className={"inputContainer" + parent}>
+                {tagContainer}
+                <div className={`searchInput ${parent} ${relation} ${position} ${dimension} `}>
+                    <FontAwesomeIcon icon={icon} />
+                    <input placeholder={placeholder}
+                        type={type}
+                        onChange={onChange}
+                        value={value}>
+                    </input>
+                </div>
             </div>
+
         )
     }
 }

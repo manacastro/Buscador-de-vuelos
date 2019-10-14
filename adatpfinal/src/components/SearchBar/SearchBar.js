@@ -12,11 +12,11 @@ class SearchBar extends React.Component {
         this.props.history.push('/FlightsResults')
     }
     render() {
-        const { title, subtitle } = this.props
+        const { title, subtitle, parent, relation, position, dimension } = this.props
+        let header = "";
+
         return (
-            <div className='search'>
-                <h1>{title}</h1>
-                <p>{subtitle}</p>
+            <div className={"search" + parent}>
                 <SearchContextConsumer>
                     {
                         ({ iataOrigin, modifyInfoiataOrigin,
@@ -25,15 +25,15 @@ class SearchBar extends React.Component {
                             toData, modifyInfoToData,
                             adults, modifyAdults }) => (
                                 <div className='searchBar'>
-                                    <SearchInput value={iataOrigin} onChange={modifyInfoiataOrigin} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.LEFTEXTREME} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Departure'} />
-                                    <SearchInput value={iataDest} onChange={modifyInfoIataDest} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faMapMarkerAlt} placeholder={'Arrival'} />
-                                    <SearchInput value={fromDate} onChange={modifyInfoFromDate} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
-                                    <SearchInput value={toData} onChange={modifyInfoToData} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
-                                    <SearchInput value={adults} onChange={modifyAdults} relation={SEARCHINPUT_RELATIONS.JOINED} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.MEDIUM} icon={faUserFriends} type={'number'} placeholder={'1'} />
+                                    <SearchInput parent={parent} tag="From" value={iataOrigin} onChange={modifyInfoiataOrigin} relation={relation} position={SEARCHINPUT_POSITIONS.LEFTEXTREME} dimension={parent === "interior" ? SEARCHINPUT_DIMENSIONS.MEDIUM : SEARCHINPUT_DIMENSIONS.AUTO} icon={faMapMarkerAlt} placeholder={'Departure'} />
+                                    <SearchInput parent={parent} tag="To" value={iataDest} onChange={modifyInfoIataDest} relation={relation} position={SEARCHINPUT_POSITIONS.CENTER} dimension={parent === "interior" ? SEARCHINPUT_DIMENSIONS.MEDIUM : SEARCHINPUT_DIMENSIONS.AUTO} icon={faMapMarkerAlt} placeholder={'Arrival'} />
+                                    <SearchInput parent={parent} tag="Arrival" value={fromDate} onChange={modifyInfoFromDate} relation={relation} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
+                                    <SearchInput parent={parent} tag="Departure" value={toData} onChange={modifyInfoToData} relation={relation} position={SEARCHINPUT_POSITIONS.CENTER} dimension={SEARCHINPUT_DIMENSIONS.AUTO} icon={faCalendarAlt} type={'date'} placeholder={'dd/mm/yyyy'} />
+                                    <SearchInput parent={parent} tag="Passengers" value={adults} onChange={modifyAdults} relation={relation} position={SEARCHINPUT_POSITIONS.CENTER} dimension={parent === "interior" ? SEARCHINPUT_DIMENSIONS.MEDIUM : SEARCHINPUT_DIMENSIONS.SMALL} icon={faUserFriends} type={'number'} placeholder={'1'} />
                                     <ResultsContextConsumer>
                                         {
                                             ({ loadFlights }) => (
-                                                <Button onClick={() => {
+                                                <Button parent={parent} onClick={() => {
                                                     loadFlights(iataOrigin, iataDest, fromDate, toData, adults)
                                                     this.redirect()
                                                 }} />

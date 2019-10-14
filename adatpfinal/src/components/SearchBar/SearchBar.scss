@@ -1,4 +1,5 @@
-.search {
+@import '../../styles/variables';
+.searchhome {
     position: relative;
     top: 250px;
     width: 100%;
@@ -7,16 +8,14 @@
         top: 60px;
     }
     h1 {
-        color: white;
-        
+        color: white;        
         font-size: 36px;
         letter-spacing: 0.33px;
         font-weight: 100;
         margin: 0;
     }
     p {
-        color: white;
-       
+        color: white;       
         font-size: 16px;
         opacity: 0.65;
         margin: 8px 0 0 0;
@@ -29,16 +28,56 @@
         align-items: center;
         position: absolute;
     }
+    .button:after{
+        content: ">";
+    }
+}
 
-    .ButtonArrow{
+.searchinterior {
+    position: relative;
+    top: 450px;
+    width: 90%;
+    z-index: 1;
+    left: 5%;
+    @media(max-width: 990px){
+        top: 60px;
+    }
+
+    .inputTag{
+        color: white;       
+        font-size: 12px;
+        opacity: 0.65;
+        margin: 8px 0 0 0;
+        font-family: $main-font;
+        margin-left: 5px;
+    }
+    
+    .searchBar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        bottom: 230px;
+        align-items: center;
+        position: absolute;
+    }
+
+    .button{
+        font-family: $main-font;
         border: none;
         background: none;
-        color: white; 
-
-        .ArrowIcon{
-            font-size: 25px;
-            padding-top: 18px;
-        }
+        color: white;
+        background-color: #0093d2;
+        height: 45px;
+        justify-content: center;
+        margin-top: 2%;
+        width: 74px;
+        box-shadow: none;
+        border-radius: 3px;
+        align-items: center;
+        text-align: center;
+        display: flex;     
     }
-  
+    .button:after{
+        content: "EDIT";
+    }
 }

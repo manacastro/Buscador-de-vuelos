@@ -5,7 +5,7 @@ import './Button.scss'
 
 const Button = ({onClick}) => (
     <div className='button' onClick={onClick}>
-        <FontAwesomeIcon icon={faChevronRight}/>       
+        {/* <FontAwesomeIcon icon={faChevronRight}/>        */}
     </div>
 )
 export default Button
