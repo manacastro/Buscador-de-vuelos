@@ -9,7 +9,7 @@ import FlightResultFooter from 'components/FlightResultFooter/FlightResultFooter
 import { SEARCHINPUT_RELATIONS, SEARCHINPUT_POSITIONS, SEARCHINPUT_DIMENSIONS } from 'components/SearchInput/SearchInput';
 import SearchHeader from 'components/SearchHeader/SearchHeader';
 import InputRadio from 'components/InputRadio/InputRadio';
-
+import LoadMore from 'components/LoadMore/LoadMore'
 
 class FlightsResults extends React.Component {
   redirect = () => {
@@ -18,13 +18,16 @@ class FlightsResults extends React.Component {
   render() {
     return (
       <div className='GeneralFlightsResults'>
-        <SearchHeader parent="interior"/>
+        <SearchHeader parent="interior" />
         <SearchBar relation={SEARCHINPUT_RELATIONS.DISJOINED} parent="interior" />
-        <InputRadio  parent="interior"/>
+        <InputRadio parent="interior" />
         <div className='ContentBig-ben'></div>
         <div className='mainColumn'>
           <AsideLeft />
-          <CardInfo />
+          <div className='centralColumn'>
+            <CardInfo />
+            <LoadMore />
+          </div>          
           <AsideRight />
         </div>
         <FlightResultFooter />

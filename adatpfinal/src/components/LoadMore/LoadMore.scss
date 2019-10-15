@@ -1,0 +1,18 @@
+.loadMore {
+    .buttonLoad {
+        width: 100%;
+        height: 59px;
+        background-color: #595959;
+        border: none;
+        color: #404040;
+        margin-bottom: 2%;
+        font-weight: 900;
+        text-decoration: none;   
+    }
+
+    &:hover .buttonLoad{
+        cursor: pointer;
+        background-color: #404040;
+        color: white;
+    }
+}    
