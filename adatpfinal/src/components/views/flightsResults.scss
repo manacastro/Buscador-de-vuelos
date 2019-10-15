@@ -1,0 +1,18 @@
+.GeneralFlightsResults{
+  background-color: #e6e6e6;
+  position: relative;
+  
+  .ContentBig-ben{
+    background-position:50%;
+  }
+}  
+.mainColumn{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  .centralColumn{
+    width: 100%;
+  }
+}

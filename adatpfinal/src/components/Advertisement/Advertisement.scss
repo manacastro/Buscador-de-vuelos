@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.advertisement {
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  //overflow: hidden;
+  margin-bottom: 3%;
+  p {
+    font-size: 8px;
+    font-family: $main-font;
+    color: darkgray;
+    margin: 1px 0 6px 0;
+  }
+  img {
+    width: 210px;
+  }
+}
+// ADVERTISMENT POR TAMAÑO (simple / double)
+.simple {
+  height: 380px;
+  width: 220px;
+}
+.double {
+  height: 590px;
+  width: 220px;
+}

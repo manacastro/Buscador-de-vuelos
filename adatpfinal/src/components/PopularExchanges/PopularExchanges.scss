@@ -1,0 +1,61 @@
+.ContentPopularExchange {
+    position: absolute;
+    margin-top: 20px;  
+    right: 5%;
+    .TitleContentPopularCurrencies{
+        font-family: 'Roboto', helvetica, Arial, sans-serif;
+        letter-spacing: 0.33px;
+        font-weight: bold;
+        background-color: whitesmoke;
+        font-size: 14px;
+        line-height: 1.1;
+        color: inherit;
+        color: rgb(68, 67, 67);       
+        padding-top: 15px;
+        padding-left: 45px;
+    }
+    .GeneralPopularCurrencies {
+        background-color: whitesmoke;
+        width: 750px;
+        display: flex;
+        position: relative;
+        height: 105px;
+        flex-wrap: wrap;
+        flex-direction: column;        
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        .ContentPopularCurrencies {
+            display: flex;
+            padding: 5px;
+            height: 23px;
+            .codePopularCurrencies {
+                height: 25px;
+                font-family: helvetica, Arial, sans-serif;
+                color: #0093d2;
+                width: 45px;
+                font-size: 13px;
+                font-weight: bold;
+                padding-top: 5px;
+            }
+
+            .TitlePopularCurrencies {
+                font-family: helvetica, Arial, sans-serif;
+                font-size: 12px;
+                margin-top: 5px;
+                margin-left: 10px;
+                color: #7a7a7a;
+                width: 100%;
+            }
+        }
+    }
+    &:hover {
+        visibility: visible;
+        cursor: pointer;
+    }
+    &:hover~.ContentExchange{
+        visibility: visible;
+        cursor: pointer;
+    }
+   
+}

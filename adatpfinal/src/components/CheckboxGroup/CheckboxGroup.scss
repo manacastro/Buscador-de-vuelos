@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.checkboxGroup {
+    width: 200px;
+    font-family: $main-font;
+    color: #555;
+    padding: 10px 0;
+    border-bottom: solid 1px rgb(185, 185, 185);
+    box-sizing: border-box;
+    h3 {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        display: block;
+        text-transform: uppercase;
+    }
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+}

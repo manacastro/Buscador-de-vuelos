@@ -1,0 +1,20 @@
+.button {
+   margin: 5px 0;
+   background-color: orangered;
+   cursor: pointer;
+   box-shadow: 0 0 1em orangered;
+   border-radius: 0 3px 3px 0;
+   color: white;
+   font-weight: bold;
+   line-height: 57px;
+   text-align: center;
+   width: 90px;
+   path {
+       transform: scale(1.2);
+   }
+   @media(max-width: 1200px){
+    width: 100%;
+    margin-right: 7%;
+    contain: 'SEARCH';
+   }
+}

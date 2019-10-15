@@ -1,0 +1,44 @@
+.sectionFooterFlightResult{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: darkslategray;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 50px;
+    align-items: center;
+    .Media{
+        display: flex;
+        .MediaContainer{
+            display: flex;
+            list-style: none;
+            height: 30px;
+            justify-content: flex-end;
+            padding-right: 20px;
+            .MediaIcon{
+                text-decoration: none;
+                align-items: center;
+                color:gainsboro;
+                padding-top: 22%;
+                padding-left: 29%;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .Copyright{
+        font-size: 13px;
+        margin-bottom: 0;
+        color: #b3b3b3;
+        font-family: helvetica, Arial, sans-serif;
+        .footerAdantrip{
+            color: white;
+            font-weight: 800;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

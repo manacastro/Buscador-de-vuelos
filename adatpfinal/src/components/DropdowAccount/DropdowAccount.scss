@@ -1,0 +1,26 @@
+.ContentItemsAccount{
+    background-color: whitesmoke;    
+    margin-top: 27px;
+    position: absolute;
+    height: 250px;
+    width: 150px;
+    visibility: hidden;
+    .ItemsAccount{
+        color: rgb(68, 67, 67);
+        font-family: 'Roboto', helvetica, Arial, sans-serif;
+        font-weight: normal;
+        white-space: nowrap;
+        font-size: 14px;
+        height: 25px;
+        padding-top: 15px;
+        padding-left: 10%;
+        &:hover{
+            background-color: deepskyblue;
+            color:white;
+        }
+    }
+    &:hover{
+        visibility: visible;
+        cursor: pointer;
+    }
+}

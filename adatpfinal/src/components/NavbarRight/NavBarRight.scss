@@ -3,8 +3,33 @@
     font-size: 13px;
     font-family: helvetica, Arial, sans-serif;
     padding-right: 15px;
+    &:hover~.TotalExchanges{
+        visibility: visible;
+        cursor: pointer;
+    }
+      
 }
-.flag{
-    height: 20px;
-    padding-right: 15px;
+.TotalExchanges{
+    visibility: hidden;
+    &:hover {
+        visibility: visible;
+        cursor: hand;
+    }
 }
+.ContentFlag {
+    .flag {
+        height: 20px;
+        padding-right: 15px;
+    }
+    &:hover~ .ContentLanguages {
+        visibility: visible;
+        cursor: pointer;
+}
+}
+.SectionAccount{
+    &:hover~ .ContentItemsAccount {
+        visibility: visible;
+        cursor: hand;
+    }
+}
+

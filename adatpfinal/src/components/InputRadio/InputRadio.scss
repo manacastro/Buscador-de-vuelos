@@ -1,12 +1,12 @@
 .SectionRadio{
     display: flex;
-    margin-top: -3%;
+    margin-top: -1%;
     .BlockRadio{
         display: flex;
         padding: 10px;
         .RadioInput{
             color: white;
-            margin-top: 7%;
+            margin-top: 7%;            
         }
         .textRadio{
             color: #fff;
@@ -16,6 +16,24 @@
             padding: 4px;
         }
     }
+    @media(max-width: 1100px){
+        margin-top: 34%;
+        justify-content: center;
+    }
+    @media(max-width: 960px){
+        margin-top: 40%;
+        justify-content: center;
+    }
+    @media(max-width: 805px){
+        margin-top: 46%;
+        justify-content: center;
+    }
+    @media(max-width: 700px){
+        margin-top: 55%;
+        justify-content: center;
+    }
+    @media(max-width: 600px){
+        margin-top: 60%;
+        justify-content: center;
+    }
 }
-
-

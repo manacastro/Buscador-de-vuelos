@@ -4,6 +4,8 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     width: 1200px;
     margin-left: 5%;
+    display: flex;
+    z-index: 9;
 
     .containerIso {
         height: 30px;
@@ -13,6 +15,7 @@
 
         .isoAdantrip {
             width: 80px;
+            
         }
     }
 

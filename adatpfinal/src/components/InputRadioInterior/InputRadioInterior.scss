@@ -1,0 +1,22 @@
+.SectionRadioInterior{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin-top: 16%;
+    margin-left: 5%;
+    .BlockRadioInterior{
+        display: flex;
+        padding: 10px;
+        .RadioInputInterior{
+            color: white;
+            margin-top: 7%;            
+        }
+        .textRadioInterior{
+            color: #fff;
+            opacity: 0.85;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            padding: 4px;
+        }
+    }
+}  

@@ -1,0 +1,28 @@
+.time-date-container {
+    display: flex;
+    flex-direction: column;   
+    .time-container {
+        display: flex;
+
+        .time {
+            margin-right: 5%;
+            font-weight: bold;
+        }
+
+        .ampm {
+            color: gray;
+            font-weight: unset;
+            font-size: 10px;
+            margin-top: 4%;
+        }
+    }
+    .exit{
+        color:gray;
+        font-family: helvetica, Arial, sans-serif;
+        font-size: 12px;
+    }
+    .date-container{
+        color: gray;
+        font-size: 10px;    
+    }
+}

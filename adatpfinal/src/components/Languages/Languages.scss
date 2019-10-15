@@ -24,7 +24,6 @@
         height: 395px;
         flex-wrap: wrap;
         flex-direction: column;
-        // padding: 25px;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 40px;
@@ -32,7 +31,9 @@
         .ContentCountries {
             display: flex;
             padding: 5px;
-
+            &:hover{
+                background-color: gainsboro;
+            }
             .FlagImage {
                 height: 23px;
             }
@@ -46,5 +47,9 @@
                 width: 100%;
             }
         }
+    }
+    &:hover{
+        visibility: visible;
+        cursor: pointer;
     }
 }
