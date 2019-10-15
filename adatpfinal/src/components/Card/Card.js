@@ -6,9 +6,9 @@ import Airline from 'components/Airline/Airline'
 
 const Card = ({ flightInfo }) => (
     <section className='sectionCard'>
-        <div className='Book'>
+        <div className='book'>
             <div className='price'>${flightInfo.price}</div>
-            <p className='Subprice'>economy</p>
+            <p className='subprice'>economy</p>
             <button className='buttonbookNow'>Book Now</button>
         </div>
         <section className='infoBook'>

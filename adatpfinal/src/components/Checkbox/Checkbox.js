@@ -8,8 +8,7 @@ const Checkbox = ({option, price, range}) => (
                 <div className='option'>
                     <div className='line'>
                         <input className='checkbox' type='checkbox'/>
-                        <h4>{option}</h4>
-                    {/* <span className='checkmark'></span> */}
+                        <h4>{option}</h4>                    
                     </div>
                     <div className='range'>
                         <h4>{range}</h4>

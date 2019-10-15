@@ -63,7 +63,7 @@ class ResultsContextProvider extends React.Component {
                 originIntermediateIata: flight.itineraries[0].segments[0].arrival.iataCode,
                 originCarrierCode: flight.itineraries[0].segments[0].carrierCode,
                 destinationCarrierCode: flight.itineraries[0].segments[flight.itineraries[0].segments.length - 1].carrierCode
-            }, //Asegurarse que funcione independientemente de la cantidad de segmentos que haya por cada itinerario.
+            }, 
 
             second: {
                 originFulldate: flight.itineraries[1].segments[0].departure.at,
@@ -75,7 +75,7 @@ class ResultsContextProvider extends React.Component {
                 originIntermediateIata: flight.itineraries[1].segments[0].arrival.iataCode,
                 originCarrierCode: flight.itineraries[1].segments[0].carrierCode,
                 destinationCarrierCode: flight.itineraries[1].segments[flight.itineraries[1].segments.length - 1].carrierCode
-            } //Asegurarse que funcione independientemente de la cantidad de segmentos que haya por cada itinerario.
+            } 
         }))
         this.setState({ flights: flightsInfo });
     }

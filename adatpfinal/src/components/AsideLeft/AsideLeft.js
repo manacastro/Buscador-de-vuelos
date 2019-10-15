@@ -31,5 +31,4 @@ const AsideLeft = () => (
         />
     </div>
 )
-
 export default AsideLeft
