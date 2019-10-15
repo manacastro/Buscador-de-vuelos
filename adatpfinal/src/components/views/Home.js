@@ -10,7 +10,7 @@ import InputRadio from 'components/InputRadio/InputRadio';
 
 const Home = () => (
     <div className='general'>
-        <SearchHeader/>
+        <SearchHeader parent="home"/>
         <SearchBar relation={SEARCHINPUT_RELATIONS.JOINED} parent="home"/>
         <InputRadio/>
         <section className='FeatureSection'>

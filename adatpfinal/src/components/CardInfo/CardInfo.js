@@ -6,11 +6,12 @@ import './CardInfo.scss'
 
 const CardInfo = () => (
     <div className='cardGroup'>
-        <SortBy/>
+        <SortBy />
         <ResultsContextConsumer>
             {
                 ({ flights }) =>
                     flights.map(flightInfo => <Card flightInfo={flightInfo} />)
+
             }
         </ResultsContextConsumer>
     </div>

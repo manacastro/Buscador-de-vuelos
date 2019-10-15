@@ -2,7 +2,7 @@ import React from 'react'
 import './InputRadio.scss';
 
 const InputRadio = () => (
-    <div className='SectionRadio'>
+    <div className='SectionRadio interior'>
         <div className='BlockRadio'>
             <input className='RadioInput' type='radio' name='radio' value='' />
             <p className='textRadio'>Round Trip</p>

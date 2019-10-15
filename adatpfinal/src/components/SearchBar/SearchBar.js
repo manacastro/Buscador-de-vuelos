@@ -8,6 +8,9 @@ import { ResultsContextConsumer } from 'components/Contexts/ResultsContext';
 import { withRouter } from 'react-router-dom'
 
 class SearchBar extends React.Component {
+    state = {
+        flightCount: 0
+    }
     redirect = () => {
         this.props.history.push('/FlightsResults')
     }
@@ -45,7 +48,6 @@ class SearchBar extends React.Component {
                     }
 
                 </SearchContextConsumer>
-
             </div>
         )
     }

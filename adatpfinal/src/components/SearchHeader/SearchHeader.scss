@@ -1,3 +1,4 @@
+@import '../../styles/variables';
 .SectionSearchheader{
     padding-top: 75px;
 
@@ -11,5 +12,18 @@
         font-family: helvetica, Arial, sans-serif;
         padding-top: 10px;
         padding-bottom: 2%;
+    }
+}
+section.SectionSearchheader.interior{     
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    margin-left: 5%;
+    margin-top: 2%;
+    .TitleSearchHeader{
+        font-size: 27px;
+        color: gainsboro;
+        font-family: $main-font;
     }
 }

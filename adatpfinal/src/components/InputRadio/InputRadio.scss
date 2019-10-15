@@ -18,4 +18,10 @@
     }
 }
 
-
+.SectionRadio.interior{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin-top: 16%;
+    margin-left: 5%;
+}
