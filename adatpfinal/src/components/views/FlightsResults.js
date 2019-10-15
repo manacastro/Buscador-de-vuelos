@@ -8,7 +8,7 @@ import AsideRight from 'components/AsideRight/AsideRight';
 import FlightResultFooter from 'components/FlightResultFooter/FlightResultFooter'
 import { SEARCHINPUT_RELATIONS, SEARCHINPUT_POSITIONS, SEARCHINPUT_DIMENSIONS } from 'components/SearchInput/SearchInput';
 import SearchHeader from 'components/SearchHeader/SearchHeader';
-import InputRadio from 'components/InputRadio/InputRadio';
+import InputRadioInterior from 'components/InputRadioInterior/InputRadioInterior';
 import LoadMore from 'components/LoadMore/LoadMore'
 
 class FlightsResults extends React.Component {
@@ -20,7 +20,7 @@ class FlightsResults extends React.Component {
       <div className='GeneralFlightsResults'>
         <SearchHeader parent="interior" />
         <SearchBar relation={SEARCHINPUT_RELATIONS.DISJOINED} parent="interior" />
-        <InputRadio parent="interior" />
+        <InputRadioInterior />
         <div className='ContentBig-ben'></div>
         <div className='mainColumn'>
           <AsideLeft />

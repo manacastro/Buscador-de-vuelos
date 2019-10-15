@@ -3,6 +3,9 @@
     padding-top: 60px;
     .FeatureSection{
         display: flex;
+        @media(max-width: 1200px){
+            flex-direction: column;
+        }
     }
     .SectionSearchheader{
         .TitleSearchHeader{

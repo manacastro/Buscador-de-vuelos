@@ -11,8 +11,19 @@
 .searchInput.home{
     background: rgba(0,0,0,0.2);
     border: 0.5px solid rgba(255, 255, 255, 0.5);
+    @media(max-width: 1200px){
+        width: 100%;
+        margin-right: 7%;
+    }
+
 }
 
+.inputContainerhome{
+    @media(max-width: 1200px){
+        width: 100%;
+        margin-right: 7%;
+    }
+}
 .inputContainerinterior{
     width: 18%;
 }
@@ -58,8 +69,9 @@
         //font-family: $secondary-font;
         font-size: 16px;
         color: white;
+       
     }
-}
+}   
 .disjoined {
     margin: 4px;
 }
